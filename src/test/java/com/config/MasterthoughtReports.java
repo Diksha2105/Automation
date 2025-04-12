@@ -10,7 +10,7 @@ import java.util.List;
 public class MasterthoughtReports {
 
     public static void main(String[] args) {
-        File reportOutputDirectory = new File("target/masterthought-reports");
+        File reportOutputDirectory = new File("Test/target/masterthought-reports");
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add("target/cucumber.json"); // Path to your JSON report
 

@@ -1,175 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T20:28:53 IST" name="Cucumber Test Suite" finished-at="2025-04-11T20:31:18 IST" duration-ms="144987">
+  <suite started-at="2025-04-12T18:41:42 IST" name="Test Automation" finished-at="2025-04-12T18:41:43 IST" duration-ms="413">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5386659f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T20:28:53 IST" name="Cucumber Tests" finished-at="2025-04-11T20:31:18 IST" duration-ms="144987">
+    <test started-at="2025-04-12T18:41:42 IST" name="Cucumber Test Suits" finished-at="2025-04-12T18:41:43 IST" duration-ms="413">
       <class name="com.testrunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:28:53 IST" name="setUpClass" finished-at="2025-04-11T20:28:53 IST" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-12T18:41:42 IST" name="setUpClass" finished-at="2025-04-12T18:41:43 IST" duration-ms="379" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1e0fdb2f]]>
+                <![CDATA[org.testng.TestRunner@64b31700]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:28:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:29:26 IST" duration-ms="32454" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search Functionality by giving valid input data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:29:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:29:58 IST" duration-ms="32596" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search Functionality by giving Invalid input data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:29:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:31:00 IST" duration-ms="62120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search Functionality by not providing data in Country field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:31:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:31:07 IST" duration-ms="6259" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search Functionality by not providing data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.stepdefinitions.SearchFunctionality_Steps.navigateToCareersWebsite(SearchFunctionality_Steps.java:30)
-at ✽.user should navigate to careers website(file:///C:/Users/Anushka/Desktop/Diksha/Test%20Automation/Demo/src/test/resources/features/TestCase01.feature:30)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:31:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:31:12 IST" duration-ms="5413" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search Functionality by providing invalid JOB ID"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.stepdefinitions.SearchFunctionality_Steps.navigateToCareersWebsite(SearchFunctionality_Steps.java:30)
-at ✽.user should navigate to careers website(file:///C:/Users/Anushka/Desktop/Diksha/Test%20Automation/Demo/src/test/resources/features/TestCase01.feature:37)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:31:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T20:31:18 IST" duration-ms="5723" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Reset Search functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Reset Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.stepdefinitions.SearchFunctionality_Steps2.navigateToCareersWebsite(SearchFunctionality_Steps2.java:31)
-at ✽.careers website should open(file:///C:/Users/Anushka/Desktop/Diksha/Test%20Automation/Demo/src/test/resources/features/TestCase02.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.testRunner@5032714f]" started-at="2025-04-11T20:31:18 IST" name="tearDownClass" finished-at="2025-04-11T20:31:18 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-12T18:41:43 IST" name="tearDownClass" finished-at="2025-04-12T18:41:43 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.testrunner.testRunner -->
-    </test> <!-- Cucumber Tests -->
-  </suite> <!-- Cucumber Test Suite -->
+    </test> <!-- Cucumber Test Suits -->
+  </suite> <!-- Test Automation -->
 </testng-results>

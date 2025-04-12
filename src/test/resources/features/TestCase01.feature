@@ -1,45 +1,17 @@
 Feature: Search Functionality
 
 @regression 
-@sanity
-Scenario: Verify Search Functionality by giving valid input data
+@Smoke
+Scenario Outline: Verify Search Functionality
+  Given user should navigate to careers website
+  Then user should navigate to search and interact with search input fields "<Input1>" and "<Input2>" and "<Input3>" and "<Input4>" and "<Input5>"
+  Then Validate the result
+  Then Submit Search form.
 
-Given user should navigate to careers website
-Then user should navigate to search and interact with search input fields "Chairman" and "India" and "Analyst" and "Full Time" and "RO1234"
-Then Validate the result
-Then Submit Search form.
+Examples:
+  | Input1     | Input2 | Input3  | Input4     | Input5  |
+  | Chairman   | India  | Analyst | Full Time  | RO1234  |
+  | @@@        | ##     | %$#     | @#         | @#      |
 
-@regression
-@sanity
-Scenario: Verify Search Functionality by giving Invalid input data
 
-Given user should navigate to careers website
-Then user should navigate to search and interact with search input fields "@@@" and "##" and "%$#" and "@#" and "@#"
-Then Validate the result
-Then Submit Search form.
-
-@regression
-@sanity
-Scenario: Verify Search Functionality by not providing data in Country field
-
-Given user should navigate to careers website
-Then user should navigate to search and interact with search input fields "Chairman" and "" and "Analyst" and "Full Time" and "RO1234"
-Then Validate the result
-Then Submit Search form.
-
-@regression
-Scenario: Verify Search Functionality by not providing data 
-
-Given user should navigate to careers website
-Then user should navigate to search and interact with search input fields "" and "" and "" and "" and ""
-Then Validate the result
-Then Submit Search form.
-
-@regression
-Scenario: Verify Search Functionality by providing invalid JOB ID
-
-Given user should navigate to careers website
-Then user should navigate to search and interact with search input fields "Chairman" and "India" and "Analyst" and "Full Time" and "RO1234"
-Then Validate the result
-Then Submit Search form.
 

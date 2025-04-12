@@ -4,9 +4,9 @@ package com.stepdefinitions;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.aventstack.extentreports.Status;
+
 import com.base.BaseClass;
-import com.config.CustomObjectFactory;
+
 import com.pages.SearchPage;
 
 import io.cucumber.java.en.Given;
@@ -41,15 +41,15 @@ public class SearchFunctionality_Steps2 extends BaseClass {
 	    }
 
 	    @Then("Navigate to search form {string} and {string} and {string} and {string} and {string}")
-	    public void user_navigateToSearchFields(String category, String Country , String corporateTitle , String whatisyourAvailability , String JobId)  {
+	    public void user_navigateToSearchFields(String Input1, String Input2 , String Input3 , String Input4 , String Input5)  {
 	    	
 	    	try {
 				search.Professionals();
-	    	search.divisioncategory(category);
-	    	search.countryfield(Country);
-	    	search.CoTitle(corporateTitle);
-	    	search.Availability(whatisyourAvailability);
-	    	search.JobID(JobId);
+	    	search.divisioncategory(Input1);
+	    	search.countryfield(Input2);
+	    	search.CoTitle(Input3);
+	    	search.Availability(Input4);
+	    	search.JobID(Input5);
 	    	 
 	    	} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

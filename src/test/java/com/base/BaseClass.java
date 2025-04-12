@@ -1,5 +1,7 @@
 package com.base;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.file.Files;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,9 +12,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.nio.file.Paths;
+import java.util.Properties;
 
 public class BaseClass {
 public static WebDriver driver;
+
+private static Properties properties;
+
 
 public static void scrollintoView(WebElement element) {
 	
@@ -56,4 +62,27 @@ public static void saveScreenshotToFile(byte[] screenshot, String scenarioName) 
 		e.printStackTrace();
 	}
 }
+
+
+
+    // Load properties file
+    public static void loadProperties() {
+        try {
+            FileInputStream file = new FileInputStream("src/test/resources/config.properties");
+            properties = new Properties();
+            properties.load(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to load properties file.");
+        }
+    }
+
+    // Get property value by key
+    public static String getProperty(String key) {
+        if (properties == null) {
+            loadProperties(); // Load properties if not already loaded
+        }
+        return properties.getProperty(key);
+    }
 }
+
