@@ -53,7 +53,7 @@ public static void Screenshot (String Name) {
 
 public static void saveScreenshotToFile(byte[] screenshot, String scenarioName) {
 	try {
-		String directoryPath = "C://Users//Anushka//Desktop//Diksha//Test Automation//Demo//target";
+		String directoryPath = "Demo/target";
 		Files.createDirectories(Paths.get(directoryPath));
 		String filePath = directoryPath + "/" +scenarioName + ".png";
 		Files.write(Paths.get(filePath), screenshot);

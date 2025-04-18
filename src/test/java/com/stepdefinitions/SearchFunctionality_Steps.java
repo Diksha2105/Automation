@@ -21,7 +21,7 @@ public class SearchFunctionality_Steps extends BaseClass {
 	}
 
     @Given("user should navigate to careers website")
-    public void navigateToCareersWebsite() {
+    public void usernavigateToCareersWebsite() {
     	try {
         System.out.println("Navigating to careers website...");
         String actualtitle = driver.getTitle();

@@ -1,27 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-12T18:41:42 IST" name="Test Automation" finished-at="2025-04-12T18:41:43 IST" duration-ms="413">
+  <suite started-at="2025-04-18T22:50:20 IST" name="Test Automation" finished-at="2025-04-18T22:51:48 IST" duration-ms="88273">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5386659f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-12T18:41:42 IST" name="Cucumber Test Suits" finished-at="2025-04-12T18:41:43 IST" duration-ms="413">
+    <test started-at="2025-04-18T22:50:20 IST" name="Cucumber Test Suits" finished-at="2025-04-18T22:51:48 IST" duration-ms="88273">
       <class name="com.testrunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-12T18:41:42 IST" name="setUpClass" finished-at="2025-04-12T18:41:43 IST" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-18T22:50:20 IST" name="setUpClass" finished-at="2025-04-18T22:50:21 IST" duration-ms="829" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@64b31700]]>
+                <![CDATA[org.testng.TestRunner@c29fe36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-12T18:41:43 IST" name="tearDownClass" finished-at="2025-04-12T18:41:43 IST" duration-ms="15" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-18T22:50:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-18T22:50:28 IST" duration-ms="6800" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search Functionality with Valid Input with multiple filters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title Verification failed expected [Home – Deutsche Bank Careers] but found [429 Too Many Requests]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.stepdefinitions.SearchFunctionality_Steps.usernavigateToCareersWebsite(SearchFunctionality_Steps.java:30)
+at ✽.user should navigate to careers website(file:///C:/Users/Anushka/Documents/Test/src/test/resources/features/TestCase01.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-18T22:50:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-18T22:51:07 IST" duration-ms="39651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Reset Search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Reset Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-18T22:51:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-18T22:51:48 IST" duration-ms="40916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search Functionality with Invalid Input with multiple filters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.testRunner@5386659f]" started-at="2025-04-18T22:51:48 IST" name="tearDownClass" finished-at="2025-04-18T22:51:48 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

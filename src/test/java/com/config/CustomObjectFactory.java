@@ -23,7 +23,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.base.BaseClass;
 import com.pages.SearchPage;
 import com.stepdefinitions.SearchFunctionality_Steps;
+import com.stepdefinitions.SearchFunctionality_Steps10;
 import com.stepdefinitions.SearchFunctionality_Steps2;
+import com.stepdefinitions.SearchFunctionality_Steps3;
+import com.stepdefinitions.SearchFunctionality_Steps4;
+import com.stepdefinitions.SearchFunctionality_Steps5;
+import com.stepdefinitions.SearchFunctionality_Steps6;
+import com.stepdefinitions.SearchFunctionality_Steps7;
+import com.stepdefinitions.SearchFunctionality_Steps8;
+import com.stepdefinitions.SearchFunctionality_Steps9;
 
 public class CustomObjectFactory implements ObjectFactory {
 	private WebDriver driver;
@@ -92,6 +100,30 @@ public class CustomObjectFactory implements ObjectFactory {
         		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
         	}
         	if (glueClass == SearchFunctionality_Steps2.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps3.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps4.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps5.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps6.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps7.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps8.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps9.class) {
+        		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
+        	}
+        	if (glueClass == SearchFunctionality_Steps10.class) {
         		return glueClass.getDeclaredConstructor(WebDriver.class , SearchPage.class).newInstance(driver, search);
         	}
         	return glueClass.getDeclaredConstructor().newInstance();

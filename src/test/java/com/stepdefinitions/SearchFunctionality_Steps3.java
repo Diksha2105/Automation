@@ -1,28 +1,24 @@
 package com.stepdefinitions;
 
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-
 import com.base.BaseClass;
-
 import com.pages.SearchPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class SearchFunctionality_Steps2 extends BaseClass {
-
+public class SearchFunctionality_Steps3 extends BaseClass{
 	private WebDriver driver;
 	private SearchPage search;
 	
-	public SearchFunctionality_Steps2 (WebDriver driver, SearchPage search) {
+	public SearchFunctionality_Steps3 (WebDriver driver, SearchPage search) {
 		this.driver = driver;
 		this.search = new SearchPage(driver);
 	}
-	  @Given("careers website should open")
-	    public void careersWebSite() {
+	  @Given("search form should open")
+	    public void searchForm() {
 	    	try {
 	        System.out.println("Navigating to careers website...");
 	        String actualtitle = driver.getTitle();
@@ -33,15 +29,15 @@ public class SearchFunctionality_Steps2 extends BaseClass {
 	    	}catch(Exception e) {
 	    		e.printStackTrace();
 	    	
-	    		Screenshot("Navigatewebsite");
+	    		Screenshot("searchPage");
 	    	}
 	    	
 
 	        
 	    }
 
-	    @Then("Navigate to search form {string} and {string} and {string} and {string} and {string}")
-	    public void unavigateToSearchForm(String Input1, String Input2 , String Input3 , String Input4 , String Input5)  {
+	    @Then("provide invalid input {string} and {string} and {string} and {string} and {string}")
+	    public void provideInvalidInput(String Input1, String Input2 , String Input3 , String Input4 , String Input5)  {
 	    	
 	    	try {
 				search.Professionals();
@@ -56,41 +52,27 @@ public class SearchFunctionality_Steps2 extends BaseClass {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			
-				Screenshot("Navigatewebsite");
+				Screenshot("SearchFields");
 			}
 	    
 
 	       
 	    }
-	    @Then("check result")
-	    public void checkResult() {
-	        System.out.println("Validating search results...");
-	        try {
-				search.Result();
-				
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				
-				Screenshot("Navigatewebsite");
-			}
-	        
-	    }
+	
 
-    @Then("Click on Reset Button")
-    public void resetSearchForm(){
+    @Then("click on submit button form should submit by getting correct error message")
+    public void ClickonSubmitform(){
         
         try {
-			search.ResetButton(); 
+			search.SearchButton();; 
 			 
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			
-			Screenshot("Navigatewebsite");
+			Screenshot("Submit");
 		}
 
     }
 
- 
 }
